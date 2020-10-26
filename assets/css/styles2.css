@@ -1,0 +1,77 @@
+/* Bulma Styles */
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.hero.is-fullheight 
+.hero-body, 
+.hero.is-fullheight-with-navbar 
+.hero-body, .hero.is-halfheight 
+.hero-body {
+    align-items: center;
+    display: flex;
+}
+
+.hero-body {
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding: 3rem 1.5rem;
+}
+
+.hero.is-info {
+    background-color: #3298dc;
+    color: #fff;
+}
+
+.hero-head {
+    color: blue;
+}
+.navbar {
+    align-items: center;
+    color: red;
+}
+
+.container {
+    padding: 10px;
+}
+
+input {
+        height:40px;
+        width: 400px;
+        font-size: 14pt;
+        align-content: center;
+        display: flex;
+    }
+
+
+html, body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+body {
+    color: #4a4a4a;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+body, button, input, select, textarea {
+    font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+button is-info {
+    color: #4a4a4a;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+
+}
+
+
+/* Google Maps Map- needs width and height to appear */
+map {
+	width: 900px;
+	max-width: 100%;
+	height: 500px;
+}
