@@ -68,34 +68,34 @@ var city= document.querySelector("select[name='cityid']")
 
 /****************************************************************** THIS IS THE OWL CAROUSEL FUNCTION *************************************************************/
 
-$(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
-    slideTransition:"linear",
-    loop:true,
-    autoplay:true,
-    center:true,
-    stagePadding: 10,
-    margin:10,
-    nav:false,
-    items:1,
-    merge:true,
-    pullDrag:true,
-    mergeFit:true,
-    videoHeight:60,
-    videoWidth:100,
+// $(document).ready(function(){
+//     $(".owl-carousel").owlCarousel({
+//     slideTransition:"linear",
+//     loop:true,
+//     autoplay:true,
+//     center:true,
+//     stagePadding: 10,
+//     margin:10,
+//     nav:false,
+//     items:1,
+//     merge:true,
+//     pullDrag:true,
+//     mergeFit:true,
+//     videoHeight:60,
+//     videoWidth:100,
 
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:5
-        }
-    }
-})
+//     responsive:{
+//         0:{
+//             items:1
+//         },
+//         600:{
+//             items:3
+//         },
+//         1000:{
+//             items:5
+//         }
+//     }
+// })
 
 /************************************************** THE displayCuisines FUNCTION FETCHES DATA FROM THE ZOMATO API ARRAY ***********************************************/
 
@@ -153,4 +153,4 @@ var Loadcontent = function(event){
 searchBtnEl.addEventListener("submit", Loadcontent);
 
 
-});
+;
