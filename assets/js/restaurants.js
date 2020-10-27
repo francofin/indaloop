@@ -77,7 +77,7 @@ $(document).ready(function(){
     stagePadding: 10,
     margin:10,
     nav:false,
-    items:1,
+    items:3,
     merge:true,
     pullDrag:true,
     mergeFit:true,
