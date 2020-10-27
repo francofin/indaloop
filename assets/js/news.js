@@ -154,16 +154,19 @@ var getNews = function(search_term1, articleSelector, titleSelector, contentSele
 
 };
 
-// fetch("https://developers.zomato.com/api/v2.1/categories", {
-//     "method": "GET",
-//         "headers": {
-//             "user-key": "4726b7bb9adff2236c9285afdf21b5e2"}
-//         }).then(function(response) {
-//     response.json().then(function(data) {
-//         console.log(data)
-//     })
-// });
-
+fetch("https://api-gate2.movieglu.com/cinemasNearby/?n=5", {
+    "method": "GET",
+        "headers": {
+            "user-key": "f0vJ1i83dK9tUCFs1Ffzka5uUJ4Zf1qnaJ18n7e3",
+            "authorization": "Basic RUZHOlRwNlZyUFNMMmh4OA==",
+            "api-version": "v200",
+            "territory": "CA",
+            "geolocation": "51.510391;-0.13013"}
+        }).then(function(response) {
+    response.json().then(function(data) {
+        console.log(data)
+    })
+});
 getHighlights("US elections");
 
 getNews("covid", newsArticle1, newsTitle1, newsContent1, url1, image1);
