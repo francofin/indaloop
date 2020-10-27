@@ -96,6 +96,7 @@ $(document).ready(function(){
         }
     }
 })
+});
 
 /************************************************** THE displayCuisines FUNCTION FETCHES DATA FROM THE ZOMATO API ARRAY ***********************************************/
 
@@ -109,7 +110,7 @@ var displayCuisines = function(searchTerm, nameSelector,rateSelector, imgSelecto
         urlSelector.setAttribute("href", searchTerm.restaurants[i].restaurant.url);
         urlSelector.setAttribute("target", "_blank");
     }
-}
+};
 
 
 /*************************************************** THE loadCuisines FUNCTION LOADS CUISINES aka RESTAURANT INFO ***************************************************/
@@ -148,9 +149,9 @@ var Loadcontent = function(event){
     loadCuisines(searchCuisine, cityid, restName7, userRate7, featImg7, restAddy7, restPhone7,url7,6);
     loadCuisines(searchCuisine, cityid, restName8, userRate8, featImg8, restAddy8, restPhone8,url8,7);
      
- }
+ };
 
 searchBtnEl.addEventListener("submit", Loadcontent);
 
 
-});
+
