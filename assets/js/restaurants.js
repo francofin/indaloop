@@ -5,7 +5,8 @@
 /*__________________________________________________________________ User Input Variables __________________________________________________________________________*/
 var search = document.querySelector('#cuisine-search');
 var searchBtnEl = document.querySelector('#search-form');
-
+var SelectCity = document.querySelector('#select-city');
+var citySrchBtn = document.querySelector("#city-search");
 /*________________________________________________________________ Restaurant Info Variables _______________________________________________________________________*/
 var restName1 = document.querySelector("#rest-name1");
 var userRate1 = document.querySelector("#user-rate1");
@@ -150,6 +151,36 @@ var Loadcontent = function(event){
     loadCuisines(searchCuisine, cityid, restName8, userRate8, featImg8, restAddy8, restPhone8,url8,7);
      
  };
+
+ citySrchBtn.onclick = function() {
+    var cityid = city.value;
+    if (cityid === "89") {
+        SelectCity.textContent = "Toronto";
+    } 
+    else if (cityid === "294") {
+        SelectCity.textContent = "Montreal";
+    }
+    else if (cityid === "256") {
+        SelectCity.textContent = "Vancouver";
+    }
+    else if (cityid === "3594") {
+        SelectCity.textContent = "La Ronge";
+    }
+    else if (cityid === "280") {
+        SelectCity.textContent = "New York";
+    }
+    else if (cityid === "281") {
+        SelectCity.textContent = "Los Angeles";
+    }
+    else if (cityid === "291") {
+        SelectCity.textContent = "Miami";
+    }
+    else if (cityid === "61") {
+        SelectCity.textContent = "London, UK";
+    }
+ };
+     
+
 
 searchBtnEl.addEventListener("submit", Loadcontent);
 

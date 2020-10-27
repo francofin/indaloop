@@ -65,7 +65,7 @@
                   </span>
                   <span class="navbar-item">
                       <a class="button is-white is-outlined" href="#">
-                          <span>Latest Events</span>
+                          <span>Latest Events - Coming Soon</span>
                       </a>
                   </span>
               </div>
@@ -131,11 +131,14 @@
                               </p>  
                               <p> 
                               <br></br>  
+
+
+                              
 <!------------------------------------------------------------------- THIS IS THE DROPDOWN MENU ------------------------------------------------------------------------>
                                 <div class="dropdown is-hoverable is-centered">
                                 <div class="dropdown-trigger" style="padding-left: 620px;">
-                                  <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
-                                    <span>Choose a City</span>
+                                  <button class="button" id="city-search" aria-haspopup="true" type="submit" aria-controls="dropdown-menu4">
+                                    <span >Choose a City and Click Button</span>
                                     <span class="icon is-small">
                                       <i class="fas fa-angle-down" aria-hidden="true"></i>
                                     </span>
@@ -143,8 +146,8 @@
                                 <div class="dropdown-menu" id="dropdown-menu3" role="menu" style="padding-left: 640px; min-width: 100px;">
                                   <div class="select is-multiple" style="padding: 20px;" >
                                     <select name= "cityid" multiple size="8">
-                                      <option value="">Select City</option>
-                                      <option value="89">Toronto</option>
+                                      <option value="" >Select City</option>
+                                      <option value="89" id = "Toronto">Toronto</option>
                                       <option value="294">Montreal</option>
                                       <option value="256">Vancouver</option>
                                       <option value="3594">La Ronge</option>
@@ -155,6 +158,7 @@
                                     </select>                                       
                                   </div>
                                 </div>
+                                <p id = "select-city"></p>
                                 </div>
                                 </div>
                                 <div>
@@ -163,7 +167,7 @@
 <!---------------------------------------------------------------------- THIS IS THE SEARCH INPUT ---------------------------------------------------------------------->
                                   <div class="field is-grouped has-background-info-light has-text-primary is-size-4">
                                       <p class="control is-expanded">
-                                          <input class="search-box input is-medium is-info has-background-primary-light has-text-info has-text-centered" id="cuisine-search" type="text" autofocus="true" placeholder="ENTER CUISINE TYPE AND CLICK FIND FOOD!">                                   
+                                          <input class="search-box input is-medium is-info has-background-primary-light has-text-info has-text-centered" id="cuisine-search" type="text" placeholder="ENTER CUISINE TYPE AND CLICK FIND FOOD!">                                   
                                       </p>
                                   </div>
                                     <br>
@@ -281,13 +285,46 @@
 
 <!--------------------------------------------------------------------  THIS IS THE FOOTER -------------------------------------------------------------------------->                
 
-<footer class="footer is-parent">
-  <div class="content has-text-centered">
-    <p><strong>| What's Poppin |</strong> <br>by EFG Developers</p>
-  </div>
-</footer>
 </section>
 
+    <!-- ***** Footer Area Start ***** -->
+    <footer class="footer-area">
+      <div class="container">
+          <div class="columns">
+              <div class="column is-4">
+                  <div class="footer-single-widget">
+                      <a href="#"><img src="./assets/img/logo4.png" alt=""></a>
+                      <div class="copywrite-text mt-30">
+                          <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                      </div>
+                  </div>
+              </div>
+              <div class="column is-4">
+                  <div class="footer-single-widget">
+                      <ul class="footer-menu is-flex is-justify-content-space-between">
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#">Fashion</a></li>
+                          <li><a href="#">Lifestyle</a></li>
+                          <li><a href="#">Contact</a></li>
+                          <li><a href="#">Gadgets</a></li>
+                          <li><a href="#">Video</a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="column is-4">
+                  <div class="footer-single-widget">
+                      <h5>Subscribe</h5>
+                      <form action="#" method="post">
+                          <input type="email" name="email" id="email" placeholder="Enter your mail">
+                          <button type="button"><i class="fa fa-arrow-right"></i></button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
     
 <!------------------------------------------------------------------- THESE ARE THE SCRIPT TAGS ---------------------------------------------------------------------->
       <script src="./assets/js/jquery/jquery-2.2.4.min.js"></script>      
