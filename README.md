@@ -1,7 +1,7 @@
-# What's Poppin'
+# IndaLoop'
 
 
-*================ Stay In Da Loop and Find Out What's Poppin' Near You! =======================*
+*================ Stay InDaLoop and Find Out What's Poppin' Near You! =======================*
 
 ## Table of Contents
 *==================================================================================*
